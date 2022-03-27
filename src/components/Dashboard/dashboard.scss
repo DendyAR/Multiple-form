@@ -1,0 +1,110 @@
+#satu {
+  position: absolute;
+  padding: 7px;
+  width: 50px;
+  height: 45px;
+  background: #ffffff;
+  margin-top: 30px;
+  margin-left: 300px;
+  box-shadow: 0px 8px 26px -5px rgba(53, 104, 212, 0.08);
+  border-radius: 6px;
+  z-index: 1;
+}
+
+#dua {
+  z-index: 2;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 260px;
+}
+
+#tiga {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 290px;
+  z-index: 3;
+}
+
+#empat {
+  position: absolute;
+  margin-left: 750px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+#lima {
+  margin-top: -10px;
+  margin-left: 380px;
+  position: absolute;
+  z-index: 4;
+}
+
+#enam {
+  z-index: 3;
+  margin-top: 70px;
+  margin-left: 570px;
+  position: absolute;
+}
+
+#tujuh {
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 800px;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  background: #ffffff;
+  /* Shadow 2 */
+
+  box-shadow: 0px 8px 26px -5px rgba(53, 104, 212, 0.08);
+  border-radius: 3px;
+  z-index: 3;
+}
+
+.main-content-text {
+  h1 {
+    width: 402px;
+    height: 120px;
+    left: 455px;
+    top: 162px;
+
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.095em;
+
+    /* Black 3 */
+
+    color: #28293d;
+  }
+  span {
+    width: 490px;
+    height: 40px;
+    left: 511px;
+    top: 315px;
+
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    /* Black 1 */
+
+    color: #9090a7;
+  }
+
+  button {
+    width: 197px;
+    height: 64px;
+    margin-top: 30px;
+    font-family: "Krona One";
+
+    background: #055cc4;
+    border-radius: 8px;
+  }
+}

@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/scss/bootstrap.scss';
+import StepContex from "./StepContex.js"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <StepContex>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode></StepContex>,
   document.getElementById('root')
 );
 
