@@ -12,16 +12,22 @@ const StepContex = () => {
 
     useEffect(() => {
         localStorage.setItem(userData, JSON.stringify(userData))
+
     }, [userData])
 
     const handleSubmit = (e) => {
-        e.preventDefault();
         setFinalData(finalData => [...finalData, userData]);
         setUserData('');
         setCureentStep(1)
         const data = localStorage.getItem(userData)
         setItem(data)
     }
+
+    const handleDelete = () => {
+
+    }
+
+
 
 
     return (

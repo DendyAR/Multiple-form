@@ -13,8 +13,15 @@ import AccountInformation from "../components/AccountInformation.jsx";
 import logo from "../assets/icon/logo.svg";
 import Ellipse1 from "../assets/icon/Ellipse1.svg";
 import Ellipse2 from "../assets/icon/Ellipse2.svg";
+import Dashoboard from "../components/Dashboard/Dashoboard.jsx";
 
 const steps = [
+  {
+    label: "Select campaign settings",
+    description: `For each ad campaign that you create, you can control how much
+              you're willing to spend on clicks and conversions, which networks
+              and geographical locations you want your ads to show on, and more.`,
+  },
   {
     label: "Select campaign settings",
     description: `For each ad campaign that you create, you can control how much
@@ -55,6 +62,8 @@ export default function Register() {
   function showStep(step) {
     // eslint-disable-next-line default-case
     switch (step) {
+      case 0:
+        return <Dashoboard />;
       case 1:
         return <OwnerInformation />;
       case 2:
@@ -78,7 +87,7 @@ export default function Register() {
               <Step key={step.label}>
                 <StepLabel
                   optional={
-                    index === 1 ? (
+                    index === 0 ? (
                       <Typography variant="caption">Last step</Typography>
                     ) : null
                   }

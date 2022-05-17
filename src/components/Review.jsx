@@ -20,16 +20,38 @@ export default function Review() {
             </th>
           </tr>
         </thead>
+
         {finalData.map((data) => (
-          <tbody key={data.email}>
-            <tr>
-              <th>{data.name}</th>
-              <td>{data.email}</td>
-              <td>{data.number}</td>
-              <td>{data.number}</td>
-            </tr>
-          </tbody>
+          <>
+            <tbody key={data.email}>
+              <tr>
+                <td>{data.name}</td>
+                <td>{data.email}</td>
+                <td>{data.number}</td>
+              </tr>
+              <tr>
+                <th>{data.bussinessName}</th>
+                <td>{data.bussinesnumber}</td>
+                <td>{data.address}</td>
+                <td>{data.pin}</td>
+                <td>{data.file}</td>
+              </tr>
+            </tbody>
+          </>
         ))}
+        {/* {finalData.map((data) => (
+          <>
+            <tbody key={data.email}>
+              <tr>
+                <th>{data.bussinessName}</th>
+                <td>{data.bussinesnumber}</td>
+                <td>{data.address}</td>
+                <td>{data.pin}</td>
+                <td>{data.file}</td>
+              </tr>
+            </tbody>
+          </>
+        ))} */}
       </table>
     </div>
   );

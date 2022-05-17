@@ -24,6 +24,15 @@ export default function BussinesInformation() {
       </div>
       <div className="d-flex flex-column p-2 bd-highlight mt-3">
         <label htmlFor="">BUssiness Phone</label>
+        <input
+          value={userData["bussinesnumber"]}
+          onChange={(e) =>
+            setUserData({ ...userData, bussinesnumber: e.target.value })
+          }
+          type="number"
+          placeholder="Phone Number"
+          className="input-field"
+        />
         <PhoneInput country={"id"} className="phone-flags" />
       </div>
       <div className="row justify-content-between">

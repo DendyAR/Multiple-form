@@ -34,7 +34,10 @@ export default function AccountInformation() {
         <button onClick={() => setCureentStep(2)} className="btn btn-secondary">
           back
         </button>
-        <button onClick={handleSubmit} className="btn btn-primary">
+        <button
+          onClick={handleSubmit ? setCureentStep(4) : ""}
+          className="btn btn-primary"
+        >
           Next
         </button>
       </div>
