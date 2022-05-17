@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Register from '../src/pages/Register.jsx';
-import Dashoboard from './components/Dashboard/Dashoboard.jsx';
+// import Dashoboard from './components/Dashboard/Dashoboard.jsx';
 
 export const multiStepContex = React.createContext();
 
 const StepContex = () => {
-    const [item, setItem] = useState([]);
+    const [setItem] = useState([]);
     const [currentStep, setCureentStep] = useState(1)
     const [userData, setUserData] = useState([])
     const [finalData, setFinalData] = useState([])
@@ -23,9 +23,9 @@ const StepContex = () => {
         setItem(data)
     }
 
-    const handleDelete = () => {
+    // const handleDelete = () => {
 
-    }
+    // }
 
 
 
